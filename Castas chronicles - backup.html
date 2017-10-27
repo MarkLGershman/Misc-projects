@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<title>Casta Gambits | Casta</title>
+	<link href="greg.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript">
+	function startGame()
+	{
+		var person = "casta";
+		var song = " ";
+		var weapon = " ";
+		var pain = " ";
+		var game = " ";
+		numYears = prompt("Enter a number greater than boprs death count in agora: ");
+		person = prompt("Is the story about a 'Casta' or a 'Dopabopa'? ");
+		letter = person.charAt(0);
+		accel = prompt("'Double accel' or 'Triple accel': ");
+		song = prompt("'The battle to the strong' or 'This will be the day': ");
+		weapon = prompt("'My contender needs reloading' or 'I have 12 blades remaining': ");
+		pain = prompt("'Just..' or 'Forgive me': ");
+		game = prompt("'Soul calibur' or 'Sam': ");
+		document.getElementById("content").innerHTML =
+		("In the matrix " + numYears + " years ago, there was a "+ person + " who loved " + game + ". " + person + " listened to " + song + " after a rough day.</p> <p>" + person + " enjoyed going " + accel + " and screaming " + weapon + ".</p><h3>What happened? You decide! </h3> <p>Ending 1: King " + person + " is having a good dream about an action movie in " + accel + " while listening to " + song + " and wakes up.</p> <p>Ending 2: King " + person + " is going for a run and gets an instant adrenaline boost from the very thought of " + accel + " and recalls that one time he was playing " + game + " . " + person + " gets home and starts playing " + game + "' but is abruptly stopped by his lack of time.</p> <p>Ending 3: Couragous " + person + " gets into a fight at the bar. He says " + pain + ", everybody in the area leaves upon hearing " + pain + ".</p>");
+		}
+	</script>
+	</head>
+	<body>
+		<div id="container">
+		<img src="images/Emiya.Kiritsugu.jpg" class="floatleft" />
+		<h1><em>Casta Tales</em></h1>
+		<h3>For this game, you will direct our hero along a dangerous path to freedom. The hero will rejoice when "They comfort me".</h3>
+		<div id="nav">
+			<p><a href="index.html">Home</a>
+			<a href="greg.html">About Casta</a>
+			<a href="play_games.html">Play a Game</a>
+			<a href="sign.html">Sign In</a>
+			<a href="contact.html">Contact Us</a></p>
+		</div>
+		<div id="content">
+			<p>&nbsp;</p>
+			<input type="button" value = "click to begin" onclick="startGame()" />
+		</div>
+		<div id="footer">Copyright &copy; 2017 Casta<br />
+			<a href="mailto:helba_rack@hotmail.com"> helba_rack@hotmail.com</a>
+		</div>
+		</div>
+	</body>
+</html>

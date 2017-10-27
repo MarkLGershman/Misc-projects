@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<title>Castas liar</title>
+	<link href="greg.css" rel="stylesheet" type="text/css"/>
+	<script type="text/javascript">
+	function startGame()
+	{
+		var gender = "casta";
+		var song = " ";
+		var weapon = " ";
+		var pain = " ";
+		var game = " ";
+		numYears = prompt("Enter a number greater than boprs death count in agora");
+		gender = prompt("Is the story about a casta or a dopabopa?");
+		letter = gender.charAt(0);
+		accel = prompt("double accel or triple accel?");
+		song = prompt("the battle to the strong or 'this will be the day?");
+		weapon = prompt("I lost my calico or I have 8 blades remaining?");
+		pain = prompt("oww, not yet! or forgive me");
+		game = prompt("soul calibur or sam?");
+		document.getElementById("content").innerHTML =(" Once upon a time, about " + numYears + " years ago, there was a " + gender + " who loved " + game + ". " + gender + " listened to " + song + " after the ritual.</p> <p>" + gender + " enjoys going " + accel + " and screaming " + weapon + ".""</p><h3>What happened? You decide!""</h3> <p>Ending 1: King " + gender + " is going too ham on" + accel + " while listening to " + song + " and passes out from too much accel.</p>" + <p>Ending 2: King " + gender + " is fucked on" + accel + " while playing " + game + " and passes out from too much accel ".</p><p> Couragous " + gender + "gets into a fight and lauls his enemy into lowering his guard. He says" + weapon + " . His poor opponent says " + pain + " and demands that mistral stops burning dinner ".</p>");
+		}
+	</script>
+	</head>
+	<body>
+		<div id="container">
+		<img src="images/superhero.jpg" class="floatleft"/>
+		<h1><em>Castas liar</em></h1>
+		<h3>For this game, you will create a story by entering words as prompted. The story will change each time you run this game, as you enter different words.</h3>
+		<div id="nav">
+			<p><a href="index.html">Home</a>
+			<a href="greg.html">About Casta</a>
+			<a href="play_games.html">Play a Game</a>
+			<a href="sign.html">Sign In</a>
+			<a href="contact.html">Contact Us</a></p>
+		</div>
+		<div id="content">
+			<p>&nbsp;</p>
+			<input type="button" value="click to begin" onclick="startGame()"/>
+		</div>
+		<div id="footer">Copyright &copy; 2017 Casta<br/>
+			<a href="mailto:Boobs@hotmail.com"> Boobs@hotmail.com</a>
+		</div>
+		</div>
+	</body>
+</html>
