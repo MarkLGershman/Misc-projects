@@ -1,5 +1,5 @@
 body { background-color: #000040;
-       background-image: url(background.gif);
+       background-image: url(background.html);
        color: #88ffff;
        font-family: Verdana, Arial, sans-serif;
 }
@@ -64,15 +64,15 @@ h2 { text-transform: uppercase;
 }
 h3 {
 	color: #88ffff;
-	font-size: 1em;
+	font-size: 1.2em;
 	border-bottom: 1px solid #000000;
 	margin-right: auto;
 	text-align: left;
-	padding-top: 20px;
-	padding-right: 150px;
-	padding-bottom: 20px;
-	padding-left: 150px;
-	line-height: 130%;
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	line-height: 120%;
 }
 .details { padding-left:20%;
            padding-right:20%; 
@@ -99,7 +99,7 @@ a:hover {
 	background-color: #88ffff;
 }
 span {
-	font-size: 36px;
+	font-size: 20px;
 	font-weight: bold;
 	font-family: "Courier New", Courier, mono;
 	color: #88ffff;
@@ -113,7 +113,9 @@ table {
 td {
 	border: 2px solid #88ffff;
 	width: 5em;
-	font-family: "Courier New", Courier, mono;
-	font-size: 14px;
-	 color: #88ffff;
+	color: #88ffff;
+}
+.nobdr {
+	border: none;
+	cell-padding: 5px;
 }

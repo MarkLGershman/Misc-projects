@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+<title>Greg's Gambits | Greg's Tales</title>
+<link href="greg.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+		function start_game()
+		{
+		 	var gender = "boy";
+			var city = " ";
+			var monster = " ";
+			var food = " ";
+			var drink = " ";
+			numYears = prompt("Enter a number greater than 0: ");
+			gender = prompt("Is the story about a boy or girl? ");
+			letter = gender.charAt(0);
+			gender = (letter == "b" || letter == "B")?"boy":"girl";
+			pronoun = (gender == "boy")?"he":"she";
+			name = prompt("Enter the hero's name: ");
+			city = prompt("Enter the name of a city: ");
+			monster = prompt("Enter a type of monster: ");
+			food = prompt("Enter a food you like: ");
+			drink = prompt("Enter a drink you like: ");
+			document.getElementById("content").innerHTML=("Once upon a time, about " +numYears+ " years ago, there was a "
+			 +gender+ " named " +name+ ". " +name+
+			" lived in a small cabin in the woods just outside "
+			 +city+ " limits.</p><p>" +name+ " enjoyed walking in the woods every day until... One day "+pronoun+
+			" came upon a " +monster+ " sitting on a log eating 	a " +food+ ".</p> <p>The " +monster+ " jumped up, spilling his " +drink+ ". " +name+ " ran home as fast as " +pronoun+ " could but the " +monster+ " followed and ...</p><h3>What happened? You decide!</h3> <p> Ending 1: The " +monster+ " and " +name+ " became best friends and live in " +name+ "'s house happily ever after.</p><p>Ending 2: The " +monster+ " overpowered " +name+ " and gobbled down all the " +food+ " and " +drink+ " in " +name+ "'s refrigerator.</p><p>Ending 3: " +name+ " screamed mean things at the " +monster+ ", causing the " +monster+ " to turn and run back to the woods, never to be seen again.</p>");
+		}
+		function story2()
+		{
+
+			var yourName;
+			var gender;
+			var numYears;
+			var career;
+			var activity;
+			yourName = prompt("Please enter your name :");
+			gender = prompt("Are you a boy or girl? :");
+			numYears = prompt("Enter a number between 5 and 10 :");
+			letter = gender.charAt(0);
+			gender = (letter == "b" || letter == "B")?"boy":"girl";
+			pronoun = (gender == "boy")?"he":"she";
+			career = prompt("What was your favorite subject in school? :");
+			activity = prompt("What's your favorite thing to do :");
+			yourMovie = prompt("One word to describe your favorite movie? :");
+
+
+			document.getElementById("content").innerHTML=("Welcome " +yourName+ ", it's time to hear your story... Once upon a time, about " +numYears+ " years ago, when you were a young " +gender+ ".  You were the same question by everyone. 'What did " +pronoun+ " want to be when " +pronoun+ " grew up?' You spent day and night daydreaming about working in the " +career+ " field. But it wouldn't really be 'work' because... <p><h3>You decide the outcome!</h3></p>1. Everyone would say... 'look at how well " +pronoun+ " has done!' <p>2. You decide to take a break from the daydreaming and go " +activity+ ".</p><p>3. Or, look at " +yourName+ " " +pronoun+ "'s so " +yourMovie+ "!" );
+
+		}
+
+</script>
+</head>
+
+<body>
+<div id="container">
+	 <img src="images/superhero.jpg" class="floatleft" width="120" height="120" />
+	 <h1><em>Greg's Tales</em></h1>
+	 <h3>For this game, you will create a story by entering words as prompted. The story will change each time you run this game, as you enter different words.</h3>
+<div id="nav">
+  <p><a href="index.html">Home</a>
+  <a href="greg.html">About Greg</a>
+  <a href="play_games.html">Play a Game</a>
+  <a href="gregs_tales.html"> Greg's Tales</a>
+  <a href="sign.html">Sign In</a>
+  <a href="contact.html">Contact Us</a>
+  <a href="greg_aboutyou.html">Tell Greg About You</a></p>
+</div>
+	<div id="content">
+		 <input type="button" value = "Click to Begin" onclick="start_game()" /></button>
+
+		 <p><input type="button" value = "Click to Begin Story 2" onclick="story2()" /></button></p>
+	</div>
+	<div id="footer">Copyright &copy; 2013 Greg's Gambits<br /> <a href="mailto:Gregsucks@hotmail.com"> Gregsucks@hotmail.com</a>
+	</div>
+</div>
+</body>
+
+
+</html>
